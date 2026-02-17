@@ -1,15 +1,11 @@
-s = input()
- 
-current = 'a'    
-total_moves = 0
- 
-for ch in s:
-    current_pos = ord(current) - ord('a')
-    target_pos = ord(ch) - ord('a')
-    distance = abs(current_pos - target_pos)
-    moves = min(distance, 26 - distance)
-    
-    total_moves += moves
-    current = ch
- 
-print(total_moves)
+n=input()
+c="a"
+result=0
+for i in n:
+    c=ord(c)-ord("a")
+    t=ord(i)-ord("a")
+    d=abs(c-t)
+    m=min(d,26-d)
+    result+=m
+    c=i
+print(result)
