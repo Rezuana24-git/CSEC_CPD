@@ -1,0 +1,11 @@
+n=int(input())
+arr=[]
+result=0
+for i in range(n):
+    h,g=map(int,input().split())
+    arr.append([h,g])
+for i in range(n):
+    for j in range(n):
+        if arr[i][0] == arr[j][1]:
+            result+=1
+print(result
